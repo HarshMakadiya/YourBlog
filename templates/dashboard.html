@@ -1,0 +1,50 @@
+{% extends 'layout.html' %} {% block body %}
+<div id="colorlib-main">
+<section class="ftco-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-2">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h1 class="mb-4"><b>Admin Panel</b></h1>
+      </div>
+    </div>
+    <div class="container">
+      <h3>Add posts</h3>
+      <a href="/edit/0"><button class = "btn btn-primary">Add a new post</button></a>
+      <a href="/logout"><button class = "btn btn-primary">Logout</button></a>
+    </div>
+    <br>
+    <div class="container">
+      <h3>Add pic</h3>
+      <form action="/upload_pic" method="post" enctype="multipart/form-data">
+        <input type="file" name="pic">
+        <input type="submit" class="btn btn-primary" value="Upload a pic">
+      </form>
+    </div>
+    <div class="container"> 
+      <table class="table table-hover">
+        <h3>Edit posts</h3>
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">title</th>
+            <th scope="col">date</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for post in posts %}
+            <tr>
+              <th scope="row">{{post.id}}</th>
+              <td>{{post.title}}</td>
+              <td>{{post.timestamp}}</td>
+              <td><a href="/edit/{{post.id}}"><button class = "btn btn-primary">Edit</button></a></td>
+              <td><a href="/delete/{{post.id}}"><button class = "btn btn-primary">Delete</button></a></td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      </div>
+</section>
+</div>
+{% endblock %}

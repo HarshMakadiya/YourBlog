@@ -1,0 +1,73 @@
+{% extends 'layout.html' %} {% block body %}
+<div id="colorlib-main">
+  
+<section class="ftco-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-2">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h2 class="mb-4">Articles</h2>
+        <p>
+          Articles every day
+        </p>
+      </div>
+    </div>
+    <div class="row">
+    {% for post in  posts.items %}
+      <div class="col-md-4">
+        <div class="blog-entry ftco-animate">
+          {%set fname = "images/" + post.img_file%}
+          <a
+            href="#"
+            class="img img-2"
+            style="background-image: url({{url_for('static', filename=fname) }}"
+          ></a>
+          <div class="text text-2 pt-2 mt-3">
+            <h3 class="mb-4">
+              <a>{{ post.title }}</a>
+            </h3>
+            <p class="mb-4">
+              {{ post.content[0:140] }}...
+            </p>
+            <div class="author mb-4 d-flex align-items-center">
+              <div class="ml-3 info">
+                <span>Written by</span>
+                <a> Admin </a>,
+                <br>
+                <span>{{post.timestamp}}</span>
+              </div>
+            </div>
+            <div class="half">
+              <p>
+                <a href="post/{{post.slug}}" class="btn py-2"
+                  >Continue Reading <span class="ion-ios-arrow-forward"></span
+                ></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+      <br>
+      <div class="row">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            {% for page_num in posts.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
+              {% if page_num %}
+                {% if posts.page == page_num %}
+                  <li class="page-item"><a class="btn btn-info mb-4" href="{{url_for('home',page=page_num)}}">{{page_num}}</a></li>
+                {% else %}
+                  <li class="page-item"><a class="btn btn-outline-info mb-4" href="{{url_for('home',page=page_num)}}">{{page_num}}</a></li>
+                {% endif %}
+              {% else%} ...
+              {% endif %}
+
+            {% endfor %}
+          </ul>
+        </nav>
+      </div>
+    
+    </div>
+</section>
+</div>
+{% endblock %}

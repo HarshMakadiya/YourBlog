@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>YourBlog</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+    
+        <link rel="stylesheet" href="{{url_for('static', filename='css/open-iconic-bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/animate.css') }}">
+        
+        <link rel="stylesheet" href="{{url_for('static', filename='css/owl.carousel.min.css') }}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/owl.theme.default.min.css') }}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/magnific-popup.css') }}">
+    
+        <link rel="stylesheet" href="{{url_for('static', filename='css/aos.css') }}">
+    
+        <link rel="stylesheet" href="{{url_for('static', filename='css/ionicons.min.css') }}">
+    
+        <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap-datepicker.css') }}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/jquery.timepicker.css') }}">
+    
+        
+		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/flaticon.css') }}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/icomoon.css') }}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/style.css') }}">
+      </head>
+  <body>
+
+	<div id="colorlib-page">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="js-fullheight text-center">
+			<h1 id="colorlib-logo"><a href="index.html">YourBlog<span>.</span></a></h1>
+			<nav id="colorlib-main-menu" role="navigation">
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/about">About</a></li>
+					<li><a href="/contact">Contact</a></li>
+					<li><a href="/dashboard">Dashboard</a></li>
+				</ul>
+			</nav>
+
+			<div class="colorlib-footer">
+				<ul>
+					<li><a href="{{ params['github_url'] }}" target="_blank"><i class="icon-github"></i></a></li>
+					<li><a href="{{ params['instagram_url'] }}" target="_blank"><i class="icon-instagram"></i></a></li>
+					<li><a href="{{ params['linkdin_url'] }}" target="_blank"><i class="icon-linkedin"></i></a></li>
+				</ul>
+			</div>
+		</aside> <!-- END COLORLIB-ASIDE -->
+		<div id="colorlib-main">
+			<div class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url({{url_for('static', filename='images/bg_1.jpg') }});" data-stellar-background-ratio="0.5">
+				<div class="overlay"></div>
+				<div class="js-fullheight d-flex justify-content-center align-items-center">
+					<div class="col-md-8 text text-center">
+						<div class="img mb-4" style="background-image: url({{url_for('static', filename='images/HarshMask.jpg') }});"></div>
+						<div class="desc">
+							<h2 class="subheading">Hello I'm</h2>
+							<h1 class="mb-4">Harsh Makadiya</h1>
+							<p class="mb-4">I am an enthusiastic web application developer equipped with knowledge of the latest industrial technologies. I also have adequate knowledge of data structures and performance analysis of different computing algorithms. With my current skills, I can build and develop web applications with attractive UI and a smooth user experience. I primarily use HTML and Bootstrap technologies for building the front-end of my web application and Node, Express, and MongoDB for the back-end. I have built a web application with the above skills which consists of authentication and security aspects.</p><p class="m-4"> I further plan on sharpening my
+								current skills and learning ReactJS which would help me make my skills reach a new level. This blog is made by me using flask and sql in back-end and HTML,CSS and javascript in front-end</p>
+							<ul class="ftco-social mt-3">
+                                <li class="ftco-animate"><a href="{{ params['github_url'] }}" target="_blank"><span class="icon-github"></span></a></li>
+                                <li class="ftco-animate"><a href="{{ params['instagram_url'] }}" target="_blank"><span class="icon-instagram"></span></a></li>
+                                <li class="ftco-animate"><a href="{{ params['linkdin_url'] }}" target="_blank"><span class="icon-linkedin"></span></a></li>    
+                            </ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- END COLORLIB-MAIN -->
+	</div><!-- END COLORLIB-PAGE -->
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+            <script src="{{url_for('static', filename='js/jquery.min.js') }}"></script>
+			<script src="{{url_for('static', filename='js/jquery-migrate-3.0.1.min.js') }}"></script>
+			<script src="{{url_for('static', filename='js/popper.min.js') }}"></script>
+			<script src="{{url_for('static', filename='js/bootstrap.min.js') }}"></script>
+			<script src="{{url_for('static', filename='js/jquery.easing.1.3.js') }}"></script>
+			<script src="{{url_for('static', filename='js/jquery.waypoints.min.js') }}"></script>
+			<script src="{{url_for('static', filename='js/jquery.stellar.min.js') }}"></script>
+			<script src="{{url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+			<script src="{{url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+			<script src="{{url_for('static', filename='js/aos.js') }}"></script>
+			<script src="{{url_for('static', filename='js/jquery.animateNumber.min.js') }}"></script>
+			<script src="{{url_for('static', filename='js/bootstrap-datepicker.js') }}"></script>
+			<script src="{{url_for('static', filename='js/jquery.timepicker.min.js') }}"></script>
+			<script src="{{url_for('static', filename='js/scrollax.min.js') }}"></script>
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+			<script src="{{url_for('static', filename='js/google-map.js') }}"></script>
+			<script src="{{url_for('static', filename='js/main.js') }}"></script> 
+    
+  </body>
+</html>

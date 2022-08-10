@@ -25,11 +25,33 @@ Credits : - https://colorlib.com/ for providing this amaxing template to work on
             To start this website import .sql file to your php my admin website and start the server
 
 </p>
+<p>
+<h3>Future updates </h3>
+ <p><li>🔭 Currently you can only see my articles but soon enough you can also add comment to it </li> </p>
+ <p><li>🌱 I will try to add a section that will be named as photographs in which i will try to put my daily photos of any beautifull scenarios</li></p>
+</p>
+
+
+### ☣ Programming languages
+
+<p> 
+
+<img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=darkgreen">&emsp;
+<img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">&emsp;
+<img src="https://img.shields.io/badge/SQL-F80000?style=for-the-badge&logo=oracle&logoColor=black">&emsp;
+<img src="https://img.shields.io/badge/-Flask-brightgreen?style=for-the-badge&logo=appveyor">&emsp;
+
+
+</p>
+
+### 🛠 Software & Tools
+<p>
+
+<a href="#"><img alt="Visual Studio Code" src="https://img.shields.io/badge/-CS50IDE-brightgreen"></a>&emsp;
+<a href="#"><img alt="Visual Studio Code" src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"></a>&emsp;
+</p>
 
 I would like to thank this wonderful team of professors (David J. Malan, Brian Yu, Doug Lloyd, etc.) at Harvard for creating this amazing CS50 introductory course. Thank You
 
 Regards
     Harsh Makadiya
-    <a href="https://www.linkedin.com/in/harsh-makadiya-5815361b3/" target="_blank">Linkdin</a>
-    <a href="https://github.com/HarshMakadiya" target="_blank">Github</a>
-    <a href="https://www.instagram.com/ha4sh_makadiya/" target="_blank">Instagram</a>
